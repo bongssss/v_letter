@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #d12a6c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the container is centered vertically on the page */
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #d9d2e4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+
+input {
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Brush Script MT', cursive; /* Apply the "Pacifico" font */
+}
+
+button {
+    padding: 10px;
+    background-color: #d9d2e4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #313030;
+    font-family: 'URW Chancery L', cursive;
+    font-size: 10px;
+
+    
+}
+
+p {
+    color: #333333;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 25px;
+}
+
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input {
+        width: calc(100% - 10px);
+    }
+}
