@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
             alert("Please enter your name.");
             return;
         }
+        if (girlName.toLowerCase() !== 'edima samuel koffi') {
+            alert("Sorry, incorrect Access keyphrase. Please enter the right Access keyphrase");
+            return;
+        }
 
         // Love message with innerHTML and line breaks
         const loveMessage = `Dear Princess ${girlName},<br><br>
