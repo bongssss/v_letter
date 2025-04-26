@@ -1,3 +1,26 @@
+/*body::before {
+    content: "💗 💕 💘 💝 💖 💞";
+    font-size: 50px;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: floatHearts 20s linear infinite;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(150vh) rotate(360deg);
+    }
+}
+*/
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -9,13 +32,33 @@ body {
 }
 
 .container {
+    position: relative; /* Needed to position the bows */
     text-align: center;
     padding: 30px;
     background-color: #d9d2e4;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+    z-index: 1;
 }
+
+/* Left bow 
+.container::before {
+    content: "🎀";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    font-size: 40px;
+}
+
+ Right bow 
+.container::after {
+    content: "🎀";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 40px;
+}*/
 
 label {
     display: block;
